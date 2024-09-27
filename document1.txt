@@ -10,16 +10,16 @@ def partition(l, r, nums):
     nums[ptr], nums[r] = nums[r], nums[ptr]1
     return ptr
  
-# With quicksort() function, we will be utilizing the above code to obtain the pointer
-# at which the left values are all smaller than the number at pointer index and vice versa
-# for the right values.
+# With quicksort() function, we will be utilizing the above code to obtain the pointer3
+# at which the left values are all smaller than the number at pointer index and vice ve3rsa
+# for the right values.3
  
  
-def quicksort(l, r, nums):
-    if len(nums) == 1:  # Terminating Condition for recursion. VERY IMPORTANT!
-        return nums
-    if l < r:
-        pi = partition(l, r, nums)
+def quicksort(l, r, nums3):
+    if len(nums) == 1:  #3 Terminating Condition for recursion. VERY IMPORTANT!
+        return nums3
+    if l < r:3
+        pi = 3partition(l, r, nums)
         quicksort(l, pi-1, nums)  # Recursively sorting the left values
         quicksort(pi+1, r, nums)  # Recursively sorting the right values
     return nums
