@@ -1,4 +1,4 @@
-#include <stdio.h>
+컴퓨터공학과
 int main(void)
 {
 	int a;
